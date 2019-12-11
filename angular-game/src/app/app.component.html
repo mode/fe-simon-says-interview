@@ -1,4 +1,15 @@
-<box color="green"></box>
-<box color="red"></box>
-<box color="yellow"></box>
-<box color="blue"></box>
+<div class="app">
+  <div class="row-spaced-between">
+    <box color="green" [handleUserChoice]="handleUserChoice"></box>
+    <box color="red" [handleUserChoice]="handleUserChoice"></box>
+  </div>
+
+  <div class="row-centered">
+    <flashing-box [colorSequence]="colorSequence"></flashing-box>
+  </div>
+
+  <div class="row-spaced-between">
+    <box color="yellow" [handleUserChoice]="handleUserChoice"></box>
+    <box color="blue" [handleUserChoice]="handleUserChoice"></box>
+  </div>
+</div>
