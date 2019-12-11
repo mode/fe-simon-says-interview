@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Input } from "@angular/core";
 
 @Component({
-  selector: 'box',
-  templateUrl: './box.component.html',
-  styleUrls: ['./box.component.css']
+  selector: "box",
+  templateUrl: "./box.component.html",
+  styleUrls: ["./box.component.css"]
 })
 export class BoxComponent implements OnInit {
+  @Input() color: string;
+  @Input() public handleUserChoice: (color: string) => void;
 
-  constructor() { }
-
-  ngOnInit() {
+  handleClick() {
+    this.handleUserChoice(this.color);
   }
 
-  @Input() color: string;
+  constructor() {}
 
+  ngOnInit() {}
 }

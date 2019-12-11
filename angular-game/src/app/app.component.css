@@ -1,0 +1,16 @@
+.app {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.row-spaced-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-centered {
+  display: flex;
+  justify-content: center;
+}
