@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BoxComponent } from './box/box.component';
+import { FlashingBoxComponent } from './flashing-box/flashing-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoxComponent
+    BoxComponent,
+    FlashingBoxComponent
   ],
   imports: [
     BrowserModule
